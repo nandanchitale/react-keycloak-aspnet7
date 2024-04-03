@@ -1,0 +1,133 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    /******************** Chatgpt demo start ********************/
+    // Build
+    {
+      "label": "build",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/chatgpt_demo/keyCloakApp/keyCloakApp.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    // Publish
+    {
+      "label": "publish",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "publish",
+        "${workspaceFolder}/chatgpt_demo/keyCloakApp/keyCloakApp.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    // Watch (debug)
+    {
+      "label": "watch",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "watch",
+        "run",
+        "${workspaceFolder}/chatgpt_demo/keyCloakApp/keyCloakApp.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    /******************** Chatgpt demo end ********************/
+
+    /******************** KC_webapp start ********************/
+    // Webapp1
+    // Build
+    {
+      "label": "buildWebApp1",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/react+keycloak/dotnetApplications/WebApplication1/WebApplication1.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    // Publish
+    {
+      "label": "publishWebApp1",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "publish",
+        "${workspaceFolder}/react+keycloak/dotnetApplications/WebApplication1/WebApplication1.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    // Watch (debug)
+    {
+      "label": "watchWebApp1",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "watch",
+        "run",
+        "${workspaceFolder}/react+keycloak/dotnetApplications/WebApplication1/WebApplication1.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+
+    // Webapp2
+    // Build
+    {
+      "label": "buildWebApp2",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/react+keycloak/dotnetApplications/WebApplication2/WebApplication2.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    // Publish
+    {
+      "label": "publishWebApp2",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "publish",
+        "${workspaceFolder}/react+keycloak/dotnetApplications/WebApplication2/WebApplication2.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    // Watch (debug)
+    {
+      "label": "watchWebApp2",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "watch",
+        "run",
+        "${workspaceFolder}/react+keycloak/dotnetApplications/WebApplication2/WebApplication2.csproj",
+        "/property:GenerateFullPaths=true",
+        "/consoleloggerparameters:NoSummary"
+      ],
+      "problemMatcher": "$msCompile"
+    }
+    /******************** KC_Webapp end ********************/
+  ]
+}
