@@ -13,12 +13,12 @@ This repository contains the source code for a full-stack web application built 
 - Dockerfiles and Docker Compose: The repository includes Dockerfiles and a Docker Compose file for containerizing the application components, enabling easy deployment and scalability.
 
 # Keycloak Installation (Docker):
-Ensure you have Docker installed on your machine. If not, download and install Docker Desktop from the official website.
-Navigate to the middleware directory in the repository.
-Open a terminal window and run the following command to start Keycloak using Docker Compose:
-``` docker-compose up --build -d ```
-Keycloak will start running in a Docker container. Access the Keycloak Admin Console by navigating to http://localhost:8181/ in your web browser.
-Log in to the Admin Console using the default credentials (username: admin, password: admin). You can customize the admin credentials and other settings in the docker-compose.yml file.
+- Ensure you have Docker installed on your machine. If not, download and install Docker Desktop from the official website.
+- Navigate to the middleware directory in the repository.
+- Open a terminal window and run the following command to start Keycloak using Docker Compose:
+  - ``` docker-compose up --build -d ```
+- Keycloak will start running in a Docker container. Access the Keycloak Admin Console by navigating to http://localhost:8181/ in your web browser.
+- Log in to the Admin Console using the default credentials (username: admin, password: admin). You can customize the admin credentials and other settings in the docker-compose.yml file.
 
 # Getting Started:
 Frontend : 
